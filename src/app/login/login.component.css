@@ -1,0 +1,55 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1976d2;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 370px;
+}
+
+mat-card {
+  padding: 24px 16px 16px 16px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(33, 150, 243, 0.15);
+}
+
+.login-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1976d2;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.login-btn {
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+mat-form-field {
+  width: 100%;
+}
+
+mat-form-field .mat-mdc-text-field-wrapper {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(33, 150, 243, 0.06);
+}
+
+mat-form-field .mat-mdc-form-field-infix {
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+
+input.mat-input-element, input.mat-mdc-input-element {
+  border-radius: 12px !important;
+  background: transparent;
+}

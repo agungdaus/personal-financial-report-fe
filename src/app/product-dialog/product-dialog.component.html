@@ -1,0 +1,15 @@
+    <h2 mat-dialog-title>{{ data ? 'Edit' : 'Add' }} Product</h2>
+    <mat-dialog-content>
+      <mat-form-field>
+        <span>Product Name</span>
+        <input matInput [(ngModel)]="product.name" required>
+      </mat-form-field>
+      <mat-form-field >
+        <span>Product Price</span>
+        <input matInput type="number" [(ngModel)]="product.price" required >
+      </mat-form-field>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-button (click)="dialogRef.close()">Cancel</button>
+      <button mat-raised-button color="primary" (click)="save()" [disabled]="!isFormValid()">Save</button>
+    </mat-dialog-actions>
