@@ -7,11 +7,11 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import {} from '@angular/common/http';
 
 @Component({
   standalone: true,
-  imports:[MatDialogModule, MatFormFieldModule, MatInputModule,MatSnackBarModule,CommonModule,FormsModule,RouterModule,HttpClientModule],
+  imports:[MatDialogModule, MatFormFieldModule, MatInputModule,MatSnackBarModule,CommonModule,FormsModule,RouterModule],
     templateUrl: './product-dialog.component.html',
   styles: [`
     mat-form-field {

@@ -6,7 +6,7 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
 import { provideRouter } from '@angular/router';
 import { routes } from './app/app.routes';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
@@ -17,7 +17,8 @@ if (environment.production) {
 }
 bootstrapApplication(AppComponent, {
   providers: [
-    importProvidersFrom([HttpClientModule,MatDialogModule,BrowserAnimationsModule,ToastrModule.forRoot(),MatFormFieldModule]),
+    importProvidersFrom([MatDialogModule, BrowserAnimationsModule, ToastrModule.forRoot(), MatFormFieldModule]),
+    provideHttpClient(withInterceptorsFromDi()),
     provideRouter(routes),
     // provider lain
   ]
