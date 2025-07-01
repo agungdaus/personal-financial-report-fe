@@ -21,14 +21,12 @@ import { AuthService } from '../services/auth.service';
 
 
 @Component({
-  standalone: true,
-  imports: [
-    
-// TODO: `HttpClientModule` should not be imported into a component directly.
-// Please refactor the code to add `provideHttpClient()` call to the provider list in the
-// application bootstrap logic and remove the `HttpClientModule` import from this component.
-HttpClientModule,
-    RupiahPipe,
+    imports: [
+        // TODO: `HttpClientModule` should not be imported into a component directly.
+        // Please refactor the code to add `provideHttpClient()` call to the provider list in the
+        // application bootstrap logic and remove the `HttpClientModule` import from this component.
+        HttpClientModule,
+        RupiahPipe,
         CommonModule,
         MatTableModule,
         MatCardModule,
@@ -41,10 +39,10 @@ HttpClientModule,
         MatSnackBarModule,
         RouterModule,
         MatPaginatorModule
-  ],
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+    ],
+    selector: 'app-products',
+    templateUrl: './products.component.html',
+    styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
   

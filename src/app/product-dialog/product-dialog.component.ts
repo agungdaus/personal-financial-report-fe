@@ -10,10 +10,9 @@ import { RouterModule } from '@angular/router';
 import {} from '@angular/common/http';
 
 @Component({
-  standalone: true,
-  imports:[MatDialogModule, MatFormFieldModule, MatInputModule,MatSnackBarModule,CommonModule,FormsModule,RouterModule],
+    imports: [MatDialogModule, MatFormFieldModule, MatInputModule, MatSnackBarModule, CommonModule, FormsModule, RouterModule],
     templateUrl: './product-dialog.component.html',
-  styles: [`
+    styles: [`
     mat-form-field {
       border: 1px solid #ccc;
       border-radius: 4px;
